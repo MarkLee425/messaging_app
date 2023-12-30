@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+      {"source": "/apps/client", "destination": "/"},
+      {"source": "/apps/client/:match*", "destination": "/:match*"},
+      {"source": "/apps/server", "destination": "/api"},
+      {"source": "/apps/server/:match*", "destination": "/api/:match*"}
+    ]
+  }
