@@ -1,7 +1,0 @@
-# Ignore artifacts:
-build
-dist
-.vscode
-.turbo
-node_modules
-coverage

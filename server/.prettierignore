@@ -1,0 +1,8 @@
+# Ignore artifacts:
+build
+dist
+.vscode
+node_modules
+coverage
+.env
+pnpm-lock.yaml
