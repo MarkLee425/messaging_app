@@ -1,8 +1,16 @@
 {
-    "rewrites": [
-      {"source": "/apps/client", "destination": "/"},
-      {"source": "/apps/client/:match*", "destination": "/:match*"},
-      {"source": "/apps/server", "destination": "/api"},
-      {"source": "/apps/server/:match*", "destination": "/api/:match*"}
+    "version": 2,
+    "builds": [
+        {
+            "src": "dist/index.js",
+            "use": "@vercel/node",
+            "config": { "includeFiles": ["dist/**"] }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "dist/index.js"
+        }
     ]
   }
